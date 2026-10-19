@@ -19,7 +19,7 @@ body {
 }
 
 h2 {
-  font-size: 1.1em;
+  font-size: 1.3em;
   
 }
 
@@ -41,6 +41,9 @@ a, a:active, a:visited, a:hover {
   font-family: "Barriecito", system-ui;
   font-weight: 400;
   font-style: normal;
+  animation-name: cambioFuente;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
 }
 
 #tituloPagina:hover {
@@ -65,4 +68,10 @@ a, a:active, a:visited, a:hover {
   background-color:  rgb(193, 120, 199);
   color: white;
   cursor: pointer;
+}
+
+@keyframes cambioFuente{
+    0% {font-family:"Barriecito", system-ui;}
+    50%{font-family:Times}
+    100%{font-family:sans-serif}
 }
