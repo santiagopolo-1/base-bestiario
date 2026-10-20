@@ -1,0 +1,129 @@
+body {
+    background-image: url("./assets/img/Vespertine.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+h1 {
+    font-size: 4em;
+    color: #0e4aff;
+    text-align: center;
+    font-family: Arial;
+}
+
+p {
+  font-size: 1em;
+  font-family: 'Courier New', Courier, monospace;
+  color: #FFFFFF;
+}
+
+#contenedor {
+    background-color: #0e4aff;
+    width: 65vw;
+    min-height: 50vh;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease;
+}
+
+#contenedor:hover {
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.texto {
+    flex: 1;
+    min-width: 0;
+}
+
+.cambiar-imagen {
+  position: relative;
+  display: block;
+  width: 300px;
+  height: 400px;
+}
+.cambiar-imagen img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+.cambiar-imagen .original {
+  opacity: 1;
+}
+.cambiar-imagen .alternativa {
+  opacity: 0;
+}
+.cambiar-imagen:hover .original {
+  opacity: 0;
+}
+.cambiar-imagen:hover .alternativa {
+  opacity: 1;
+}
+
+.galeria {
+    width: 65vw;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 20px;
+    
+}
+
+.tarjeta {
+    position: relative;
+    aspect-ratio: 1 / 1;
+    overflow: visible;
+    cursor: pointer;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.descripcion {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(14, 74, 255, 0.9);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    box-sizing: border-box;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.descripcion p {
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.7em;
+    text-align: center;
+}
+
+.tarjeta:hover .descripcion {
+    opacity: 1;
+}
+
+.tarjeta h3 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1em;
+    color: #FFFFFF;
+    text-align: center;
+    margin-top: 10px;
+    margin-bottom: 0;
+}
