@@ -52,7 +52,7 @@ function generarBestia() {
   let zapatosAleatorio;
   let peliculaAleatorio;
 
-  if (Math.random() < 0.3) {
+  if (Math.random() < 0.2) {
     camisetaAleatorio = 1;
     pantalonAleatorio = 0;
     zapatosAleatorio = 4;
