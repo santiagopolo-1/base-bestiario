@@ -24,9 +24,10 @@ h2 {
 }
 
 a, a:active, a:visited, a:hover {
-  color: rgb(193, 120, 199);
+  color: rgb(255, 255, 255);
   cursor: pointer;
   text-decoration: none;
+  font-size: 4vh;
 }
 
 #contenedorGeneral {
@@ -47,7 +48,7 @@ a, a:active, a:visited, a:hover {
 }
 
 #tituloPagina:hover {
-  color: pink;
+  color: rgb(5, 0, 59);
   cursor: pointer;
 }
 
@@ -58,20 +59,21 @@ a, a:active, a:visited, a:hover {
 }
 
 .imagen {
-  height: 170px;
-  width: 150px;
+  height: 20vh;
+  width: 10vw;
   margin: 0em auto;
 }
 
 #boton {
-  font-size: 0.9em;
-  background-color:  rgb(193, 120, 199);
+  font-size: 1.2em;
+  background-color:  rgb(5, 0, 59);
   color: white;
   cursor: pointer;
+  font-family: Helvetica;
 }
 
 @keyframes cambioFuente{
     0% {font-family:"Barriecito", system-ui;}
-    50%{font-family:Times}
-    100%{font-family:sans-serif}
+    50%{font-family:Impact}
+    100%{font-family:"Barriecito", system-ui;}
 }

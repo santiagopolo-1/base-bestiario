@@ -1,20 +1,32 @@
 body {
-    background-image: url("./assets/img/Vespertine.jpeg");
+    background-image: url("./assets/img/bjorfondo.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 }
 
+#logo {
+    position: center;
+    top: 20px;
+    left: 20px;
+    width: 4vw;
+    height: auto;
+    margin: auto;
+    align-items: center;
+}
+
 h1 {
-    font-size: 4em;
-    color: #0e4aff;
-    text-align: center;
-    font-family: Arial;
+    font-size: 2.5vh;
+    font-family: 'Helvetica', sans-serif;
+    color: #FFFFFF;
+    animation-name: cambioFuente;
+    animation-duration: 0.5s;
+    animation-iteration-count: infinite;
 }
 
 p {
-  font-size: 1em;
+  font-size: 2vh;
   font-family: 'Courier New', Courier, monospace;
   color: #FFFFFF;
 }
@@ -46,8 +58,8 @@ p {
 .cambiar-imagen {
   position: relative;
   display: block;
-  width: 300px;
-  height: 400px;
+  width: 20vw;
+  height: 50vh;
 }
 .cambiar-imagen img {
   position: absolute;
@@ -126,4 +138,21 @@ p {
     text-align: center;
     margin-top: 10px;
     margin-bottom: 0;
+}
+
+@keyframes cambioFuente{
+    0% {font-family:Helvetica}
+    50%{font-family:Courier New}
+    100%{font-family:Verdana}
+}
+
+#boton {
+  font-size: 1.2em;
+  background-color:  rgb(5, 0, 59);
+  color: white;
+  cursor: pointer;
+  font-family: Helvetica;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
 }
